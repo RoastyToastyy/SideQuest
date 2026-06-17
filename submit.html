@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Submit Your Story — SideQuest</title>
+<meta name="description" content="Completed a quest? Drop your impact story and join the SideQuest hall of heroes.">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="brand">Side<span>Quest</span>!</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="challenges.html">Challenges</a></li>
+    <li><a href="stories.html">Stories</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="submit.html">Submit</a></li>
+  </ul>
+</nav>
+<header class="hero">
+  <h1>Tell Us Your<br>Mission Story!</h1>
+  <p class="lead">How did you make impact today? Drop the receipts. Inspire the next hero. No login, no spam, no cap.</p>
+</header>
+<section class="wrap">
+  <form class="form" id="submit-form" novalidate>
+    <label for="name">Hero Name (optional)</label>
+    <input id="name" name="name" type="text" placeholder="e.g. Kai, 18 — or leave blank for Anonymous Hero">
+    <label for="challenge">Which Quest Did You Slay?</label>
+    <select id="challenge" name="challenge" required></select>
+    <label for="story">Your Story</label>
+    <textarea id="story" name="story" placeholder="Spill the tea. What happened? Who showed up? What changed?" required></textarea>
+    <label for="image">Image URL (optional)</label>
+    <input id="image" name="image" type="url" placeholder="https://...">
+    <p style="margin-top:1.4rem"><button class="btn red" type="submit">💥 Drop My Story</button></p>
+    <div class="thanks" id="thanks">
+      <h3 style="margin-bottom:.4rem">🎉 LEGEND STATUS UNLOCKED</h3>
+      <p>Your story is saved to your local hero log and now lives on the <a href="stories.html">Stories feed</a>. You're officially built different. ✨</p>
+    </div>
+  </form>
+</section>
+<footer>
+  <div class="brand">Side<span style="color:var(--red)">Quest</span>!</div>
+  <p>Let's hear your story.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
